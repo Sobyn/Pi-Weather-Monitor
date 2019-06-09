@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <head>
+	<title>Sense HAT Sensor DATA</title>
+	<link rel="stylesheet" href='../static/style.css'/>
+	<meta http-equiv="refresh" content="60">
+    </head>
+
+    <body>
+        <h1>Sense HAT Sensor Data</h1>
+	<h3>Temperature ==> {{ temperature }} C</h3>
+	<h3>Pressure ==> {{ pressure }} mbar</h3>
+	<h3>Humidity ==> {{ humidity }} %</h3>
+	<hr>
+	<h3>Last updated: {{ date }} {{ time }} ==> <a href="/" class="button">REFRESH</a></h3>
+	<hr>
+	<h3>HISTORICAL DATA</h3>
+	<p> Number of samples to retrieve (Sample frequency: 10 minutes):
+	<form method="POST">
+		<input name="numSamples" value= {{numSamples}}>
+		<input type="submit">
+		</form></p>
+	<p>Past hour: 6 samples</p>
+	<p>Past 24 hours: 144 samples</p>
+	<p>Past week: 1 008 samples</p>
+	<p>Past month: 4 383 samples</p>
+	<p>Past year: 52 596 samples</p>
+	<hr>
+	<img src="/plot/temp" alt="Image Placeholder" style="width:600px;height:500px;">
+	<img src="/plot/hum" alt="Image Placeholder" style="width:600px;height:500px;">
+	<img src="/plot/press" alt="Image Placeholder" style="width:600px;height:500px;">
+	<p> @2019 Developed by Even Fosser</p>
+    </body>
+</html>
