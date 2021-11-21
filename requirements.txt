@@ -89,6 +89,6 @@ touchphat==0.0.1
 twython==3.4.0
 typed-ast==0.6.3
 unicornhathd==0.0.4
-urllib3==1.24.2
+urllib3==1.26.5
 Werkzeug==0.15.3
 wrapt==1.9.0
