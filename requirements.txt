@@ -38,7 +38,7 @@ mysql==0.0.2
 mysql-connector==2.2.9
 mysql-connector-python==2.1.6
 mysqlclient==1.4.2.post1
-numpy==1.16.3
+numpy==1.22.0
 oauthlib==2.0.1
 pantilthat==0.0.7
 pgzero==1.2
